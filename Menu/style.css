@@ -1,0 +1,189 @@
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;700&family=Poppins:wght@100;300;700&display=swap");
+
+:root {
+  --font-heading: #b68834;
+  --para-font: #928d8daa;
+  --black: #222222;
+  --bg: #fff;
+  --white: #6b6363;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+body {
+  background-color: #b68834;
+}
+
+section {
+  padding: 8rem 7%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+}
+
+nav .logo img {
+  width: 150px;
+}
+
+nav .links a {
+  color: var(--bg);
+  font-size: 1.5rem;
+  margin-right: 1rem 5%;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  position: relative;
+}
+
+nav .links a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--font-heading);
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  transition: 0.4s;
+}
+
+nav,
+links a:hover::after {
+  width: 100%;
+}
+
+nav #menu-btn,
+nav #close {
+  color: var(--white);
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar-brand:hover {
+  background-color: #805300;
+}
+
+.nav-item {
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: #805300;
+  width: 40%;
+}
+
+.header .content {
+  padding: 130px 7%;
+  color: var(--font-heading);
+}
+
+.header .content h3 {
+  font-size: 1, 4rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 3rem 0;
+}
+
+.header .content h1 {
+  font-size: 5rem;
+  letter-spacing: 2px;
+}
+
+.btn {
+  padding: 1.3rem 5rem;
+  margin: 3re, 0;
+  color: var(--black);
+  font-size: 1.4rem;
+  font-weight: 500;
+  border: 0.1rem solid var(--white);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: white;
+  color: white;
+}
+
+.nav-change {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+  margin: 100px 0px 0px 50px;
+  font-size: 3rem;
+}
+
+.card {
+  margin: auto;
+  padding: auto;
+  display: contents;
+}
+
+.card img {
+  justify-content: center;
+  width: 450px;
+  border-radius: 100px;
+  margin: 40px;
+}
+
+.card-body {
+  border: 1px solid;
+}
+
+.card-title {
+  font-size: 3rem;
+  margin: 0px 50px 00px 50px;
+}
+.card-text {
+  font-size: 2rem;
+  margin: 0px 50px 20px 50px;
+}
+
+.button {
+  background-color: wheat;
+  padding: 1.3rem 5rem;
+  margin: 3re, 0;
+  color: var(--black);
+  border: 0.1rem solid var(--white);
+}
+
+.button:hover {
+  background-color: #b68834;
+}
+
+.heading {
+  font-size: 5rem;
+  text-shadow: 3px 3px 3px black;
+  color: black;
+}
+
+.heading span {
+  color: white;
+}
+
